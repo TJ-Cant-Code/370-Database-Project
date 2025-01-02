@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Review Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <button onclick="location.href='profile.php'">My Profile</button>
+        <button onclick="location.href='restaurants.php'">View Restaurants</button>
+        
+        <h2>Make a Review</h2>
+        <form action="submit_review.php" method="post" enctype="multipart/form-data">
+            <label for="review">Your Review:</label><br>
+            <textarea name="review" id="review" rows="5" required></textarea><br>
+            
+            <label for="photos">Add Photos:</label><br>
+            <input type="file" name="photos[]" id="photos" multiple><br><br>
+            
+            <input type="submit" value="Submit Review">
+        </form>
+    </div>
+</body>
+</html>
+

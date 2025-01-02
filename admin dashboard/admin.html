@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <?php include('header.php'); ?>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.php" class="active">Dashboard</a>
+            <a href="restaurants.php">Restaurants</a>
+        </div>
+        <div class="main-content">
+            <h2>Admin Dashboard</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Total Admins</h3>
+                    <p><?php echo $totalAdmins; ?></p>
+                </div>
+                <div class="stat-item">
+                    <h3>Total Restaurants</h3>
+                    <p><?php echo $totalRestaurants; ?></p>
+                </div>
+                <div class="stat-item">
+                    <h3>Total Posts</h3>
+                    <p><?php echo $totalPosts; ?></p>
+                </div>
+                <div class="stat-item">
+                    <h3>Total Requests</h3>
+                    <p><?php echo $totalRequests; ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php include('footer.php'); ?>
+</body>
+</html>

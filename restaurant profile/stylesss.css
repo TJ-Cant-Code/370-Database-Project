@@ -1,0 +1,20 @@
+/* Add restaurant profile styling */
+.menu-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5dc;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+
+.review p {
+    margin: 5px 0;
+}
